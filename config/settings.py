@@ -139,13 +139,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Cognito Setting
-COGNITO_AWS_REGION = 'ap-northeast-2'
+COGNITO_REGION = 'ap-northeast-2'
 COGNITO_YY_DEV_CLIENT_ID = '44s8sn16mg6oj5ouj598gpbsmt'
-COGNITO_AWS_USER_POOL = 'ap-northeast-2_HhxFz6sjH'
+COGNITO_USER_POOL = 'ap-northeast-2_HhxFz6sjH'
 COGNITO_AUDIENCE = None
 
 # AWS Cognito에서 JWT 토큰을 Decode하는 API URL
-COGNITO_POOL_URL = f'https://cognito-idp.{COGNITO_AWS_REGION}.amazonaws.com/{COGNITO_AWS_USER_POOL}/.well-known/jwks/json'
+COGNITO_POOL_URL = f'https://cognito-idp.{COGNITO_REGION}.amazonaws.com/{COGNITO_USER_POOL}/.well-known/jwks/json'
+
+ZENDESK_URL = 'https://yalliyalli.zendesk.com'
+ZENDESK_ADMIN_EMAIL = 'kevin.oh@ebridge-world.com'
+ZENDESK_ADMIN_PW = 'eBridge12!'
 # pool_jwks_url = COGNITO_POOL_URL + '/.well-known/jwks.json'
 # jwks = requests.get(pool_jwks_url).json()
 # rsa_keys = {key['kid']: json.dumps(key) for key in jwks['keys']}
