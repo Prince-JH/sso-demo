@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'cognito',
 ]
 
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -153,3 +152,6 @@ ZENDESK_ADMIN_PW = 'eBridge12!'
 # pool_jwks_url = COGNITO_POOL_URL + '/.well-known/jwks.json'
 # jwks = requests.get(pool_jwks_url).json()
 # rsa_keys = {key['kid']: json.dumps(key) for key in jwks['keys']}
+
+
+UTIL_SERVER = 'http://127.0.0.1:8001'

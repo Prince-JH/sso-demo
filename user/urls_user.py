@@ -3,6 +3,7 @@ from .views import *
 # from .views_user_sign import UserSign, activate
 from .views_test import *
 from .views_user_auth import *
+from .views_user_password import *
 from .views_user_sign import *
 
 urlpatterns = [
@@ -14,5 +15,8 @@ urlpatterns = [
 
     # user_auth
     path('auth', UserAuth.as_view({"post": "authenticate"}), name="authenticate"),
+
+    # user_password
+    path('password/reset/mail', UserPassword.as_view({"post": "reset_password_send"}), name="authenticate"),
 
 ]

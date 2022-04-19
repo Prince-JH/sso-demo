@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56cd71f8-b9f2-4c36-a7c3-79b000ca5949" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user/views_user_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/views_user_password.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls_user_sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +131,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -237,7 +238,9 @@
       <workItem from="1649655001724" duration="19000" />
       <workItem from="1649655021904" duration="38000" />
       <workItem from="1649655212515" duration="54000" />
-      <workItem from="1649655286619" duration="29958000" />
+      <workItem from="1649655286619" duration="38345000" />
+      <workItem from="1650241456104" duration="800000" />
+      <workItem from="1650244853745" duration="4510000" />
     </task>
     <servers />
   </component>
