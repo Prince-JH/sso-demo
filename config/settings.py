@@ -148,7 +148,6 @@ COGNITO_POOL_URL = f'https://cognito-idp.{COGNITO_REGION}.amazonaws.com/{COGNITO
 
 ZENDESK_URL = 'https://yalliyalli.zendesk.com'
 ZENDESK_ADMIN_EMAIL = 'kevin.oh@ebridge-world.com'
-ZENDESK_ADMIN_PW = 'eBridge12!'
 # pool_jwks_url = COGNITO_POOL_URL + '/.well-known/jwks.json'
 # jwks = requests.get(pool_jwks_url).json()
 # rsa_keys = {key['kid']: json.dumps(key) for key in jwks['keys']}
