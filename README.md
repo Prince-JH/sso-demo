@@ -23,5 +23,4 @@ http://127.0.0.1:8000/sso-demo/swagger/
 - 비밀번호 변경
 
 ## User Scenario
-
-[_유저 서비스 Flow](https://user-images.githubusercontent.com/74312505/174473720-98384f0a-4b5f-481c-8593-2276366568cf.jpg)
+<img width="80%" src="https://user-images.githubusercontent.com/74312505/174473720-98384f0a-4b5f-481c-8593-2276366568cf.jpg">
