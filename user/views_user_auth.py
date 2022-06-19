@@ -46,8 +46,8 @@ class UserAuth(viewsets.GenericViewSet, mixins.ListModelMixin, View):
     # permission_classes = [IsAuthenticated]
 
     @swagger_auto_schema(
-        operation_description='[김지훈] 인증',
-        operation_summary="[김지훈] 인증",
+        operation_description='[김지훈] 인가',
+        operation_summary="[김지훈] 인가",
         operation_id='인증_01',
         tags=['유저서비스_인증'],
         manual_parameters=[token_type],
@@ -83,13 +83,13 @@ class UserAuth(viewsets.GenericViewSet, mixins.ListModelMixin, View):
                 token_type = request.GET.get('token_type', 'access')
                 token = request.data.get('token', '')
 
-                # 액세스 토큰 인증
+                # 액세스 토큰 인가
                 if token_type == 'access':
                     if token == '':
                         result['msg'] = 'Require access token'
                         return rtn_rsp(data=result, data_code=RESPONSE_FAIL, status_code=status.HTTP_200_OK)
 
-                    # 토큰 인증 성공
+                    # 토큰 인가 성공
                     if cognito_get_user(token):
                         return rtn_rsp(data_code=RESPONSE_SUCCESS, status_code=status.HTTP_200_OK)
 
